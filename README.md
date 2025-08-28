@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Wikitech Website 
 
-Currently, two official plugins are available:
+Official website of the **Wikitech Club**, built with **React + Vite**.  
+This project is open to contributions from team members and collaborators.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+----------------------------------------------------------------------------
 
-## Expanding the ESLint configuration
+Follow these steps to set up the project locally:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the Repository
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+git clone https://github.com/<your-username>/wikitech-website.git
+cd wikitech-website
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+2. Install Dependencies
+Make sure you have [Node.js](https://nodejs.org/) installed. Then run:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Run Development Server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm run dev
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The app will start at: [http://localhost:5173](http://localhost:5173)
+
+----------------------------------------------------------------------------
+
+Project Structure
+
+wikitech-website/
+├── public/           # Static assets
+├── src/              # React components & code
+│   ├── assets/       
+│   ├── components/   
+│   └── App.jsx
+├── package.json      # Dependencies & scripts
+├── vite.config.js    # Vite configuration
+└── README.md         # Project documentation
+
+---------------------------------------------
+
+Contributing
+
+If you are a collaborator:
+
+1. Clone the repo
+2. Create a new branch for your work
+
+git checkout -b feature-name
+
+3. Make your changes
+4. Commit & push
+  
+git add .
+git commit -m "Describe your change"
+git push origin feature-name
+
+5. Open a Pull Request (if branch protection is enabled) or push directly if allowed.
+
+If you are **not a collaborator**:
+
+Fork the repo → Make your changes → Submit a Pull Request.
+
+-------------------------------------------------------------
+
+License
+
+This project currently has **no license**.
+
+---------------------------------------------------------------------
+
