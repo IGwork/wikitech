@@ -1,0 +1,22 @@
+.upcoming-events {
+  margin-top: 20px;         
+  display: flex;
+  justify-content: center;  
+}
+
+.upcoming-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 9999px;
+  padding: 9.6px 21.6px;   /* increased by 20% */
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 1.08rem;       /* increased by 20% */
+  transition: 0.3s;
+}
+
+.upcoming-btn:hover {
+  background-color: white;
+  color: black;
+}

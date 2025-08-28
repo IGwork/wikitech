@@ -1,0 +1,32 @@
+.join {
+  position: fixed;
+  top: 11px;
+  right: 25px;
+  height: 34px;       /* keep original size */
+  width: 68px;        /* keep original size */
+  padding: 6px 11px;  /* like navbar buttons */
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: white;
+  background: rgba(255, 255, 255, 0.05); /* translucent */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* glass border */
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all;
+}
+
+.join:hover {
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px #2ecc71;
+  color: white;
+}
+
+.join.active {
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px #2ecc71;
+  color: white;
+}

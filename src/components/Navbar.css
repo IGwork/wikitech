@@ -1,0 +1,41 @@
+.navbar {
+  position: relative;       
+  top: 11px;             
+  left: 50%;             
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;         
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 17px;
+}
+
+.glass-button {
+  padding: 6px 11px;           /* keep original size */
+  border-radius: 9999px;        /* keep original rounding */
+  font-weight: bold;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: white;                 /* text color */
+  background: rgba(255, 255, 255, 0.05); /* translucent */
+  border: 2px solid rgba(255, 255, 255, 0.2); /* thick glass border */
+  backdrop-filter: blur(10px);  /* glass blur effect */
+  transition: 0.3s all;
+}
+
+.glass-button:hover {
+  border-color: #2ecc71;        /* glowing border color */
+  box-shadow: 0 0 10px #2ecc71;
+  color: white;                 /* keep text white on hover */
+}
+
+.glass-button.active {
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px #2ecc71;
+  color: white;
+}
